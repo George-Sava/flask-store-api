@@ -1,7 +1,7 @@
 from flask_restful import Resource, reqparse
 from flask_jwt import jwt_required, current_identity
 from models.storeModel import StoreModel
-from models.itemModel import ItemModel
+from models.ItemModel import ItemModel
 from tools.functions import cleanNullTerms
 
 
