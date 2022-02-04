@@ -18,6 +18,7 @@ pycparser==2.21
 pydantic==1.9.0
 git+https://github.com/George-Sava/pyjwt#egg=PyJWT
 git+https://github.com/marshmallow-code/marshmallow-sqlalchemy#egg=marshmallow-sqlalchemy
+git+https://github.com/marshmallow-code/flask-marshmallow#egg=flask-marshmallow
 git+https://github.com/glic3rinu/passlib#egg=passlib
 python-dotenv==0.19.2
 pytz==2021.3
