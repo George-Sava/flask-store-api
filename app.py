@@ -23,9 +23,7 @@ api.add_resource(StoreList, "/stores/all")
 api.add_resource(Items, '/items/')
 api.add_resource(ItemList, '/items/all')
 
-db.init_app(application)
-ma.init_app(application)
-db.create_all(app=application)
+
 
 if __name__ == "__main__":
       
