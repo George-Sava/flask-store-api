@@ -4,6 +4,6 @@ from database import db,ma
 db.init_app(application)
 ma.init_app(application)
 
-@application.before_first_request()
+@application.before_first_request
 def create_all():
     db.create_all(app=application)
