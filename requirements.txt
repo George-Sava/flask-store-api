@@ -20,7 +20,7 @@ passlib==1.7.4
 psycopg2==2.9.3
 pycparser==2.21
 pydantic==1.9.0
-PyJWT @ git+https://github.com/George-Sava/pyjwt@b4c579785803374cd5c08046c927d713c7324b78
+PyJWT == 1.7.1
 python-dotenv==0.19.2
 pytz==2021.3
 six==1.16.0
