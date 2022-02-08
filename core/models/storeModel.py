@@ -1,5 +1,4 @@
 from __future__ import annotations
-from tools.functions import obj_to_dict
 
 from database import db
 
@@ -13,7 +12,7 @@ class StoreModel(db.Model):
         nullable=False)
     created_at = db.Column(db.TIMESTAMP(timezone= True), nullable= False, server_default=db.text('now()'))
     owner = db.relationship('UserModel')
-    items = db.relationship('ItemModel')
+    # items = db.relationship('ItemModel')
 
         
     def to_json(self):

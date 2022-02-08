@@ -26,5 +26,16 @@ class DevConfig(Config):
     DEBUG = True
     TESTING = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SWAGGER_URL = '/docs'
+    API_URL = 'http://127.0.0.1:5000'
+
+class ProdConfig(Config):
+    
+    FLASK_ENV = 'production'
+    DEBUG = False
+    TESTING = False
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SWAGGER_URL = '/docs'
+    API_URL = 'https://store-chain-rest-api.herokuapp.com/'
     
     # SQLALCHEMY_DATABASE_URI = 'sqlite:///E:\\API Dev\\API Courses\\Udemy\\Rest API Python Flask standard\\flask_API_Store_v1_1\\data.db'    

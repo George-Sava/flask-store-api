@@ -1,5 +1,5 @@
 from __future__ import annotations
-from database import db,ma
+from database import db
 from sqlalchemy.sql import expression
 
 

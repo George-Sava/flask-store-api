@@ -1,6 +1,6 @@
 from werkzeug.security import safe_str_cmp
-from models.userModel import UserModel
-from tools.functions import verify
+from core.models.userModel import UserModel
+from core.tools.functions import verify
 
 
 def authenticate(email, password):

@@ -12,7 +12,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 # Utils
 
 # Hashing function
-def hash(password):
+def hash(password: str) :
     return pwd_context.hash(password)
 
 # Compare Hashes function

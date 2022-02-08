@@ -1,8 +1,6 @@
 # from time import strftime
-from models.storeModel import StoreModel
+from core.models.storeModel import StoreModel
 from database import db
-
-
 
 
 class UserModel(db.Model):
@@ -20,8 +18,8 @@ class UserModel(db.Model):
         
     def to_json(self):
         time = self.created_at
-        return { 'id': self.id, 'email': self.email, 'is_active': self.is_active, 'role': self.role,'stores': [store.to_json() for store in self.stores] , 'created_at': time.strftime('%m.%d.%Y / %H:%M:%S')
-        }
+        return { 'id': self.id, 'email': self.email, 'is_active': self.is_active, 'role': self.role , 'created_at': time.strftime('%m.%d.%Y / %H:%M:%S')
+        } # 'stores': [store.to_json() for store in self.stores] --> if want to attach store model to user
         
     @classmethod
     def find_by_email(cls, email):

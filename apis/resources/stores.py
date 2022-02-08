@@ -1,7 +1,6 @@
-from os import name
 from flask_jwt import jwt_required, current_identity
-from flask_restful import Resource, reqparse
-from models.storeModel import StoreModel
+from flask_restx import Resource, reqparse
+from core.models.storeModel import StoreModel
 
 class Stores(Resource):
     parser = reqparse.RequestParser(bundle_errors=True)
@@ -71,7 +70,6 @@ class Stores(Resource):
         store = StoreModel.find_by_id(_id=data['store_id'])
         current_user = current_identity
 
-        print(data)
         if not store:
             return {'message': 'Store with ID:{}, does not exist!'.format(data['store_id'])
         },404
