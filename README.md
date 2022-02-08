@@ -1,4 +1,4 @@
 ﻿Store-Chain API
  
- Implementation using Flask,Flask-RESTful, SQLAlchemy
+ Implementation using Flask,Flask-RESTx, Flask-SQLAlchemy, Swagger UI, Marshmallow
  
